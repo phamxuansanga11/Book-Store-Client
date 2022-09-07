@@ -1,0 +1,16 @@
+@import "./scss//reset";
+@import "./scss/font.scss";
+@import "./scss/header.scss";
+@import "./scss/backgroundHome.scss";
+@import "./scss/listBook.scss";
+@import "./scss/loading.scss";
+@import "./scss/cart.scss";
+@import "./scss/formLogin.scss";
+
+.container {
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}

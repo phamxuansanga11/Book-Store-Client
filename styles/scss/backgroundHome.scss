@@ -1,0 +1,55 @@
+.background__home {
+  background-color: #111;
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+.wrapper__backroundHome-item {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 50px;
+  .text {
+    span {
+      display: block;
+      color: #fff;
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #fff;
+      font-size: 48px;
+      line-height: 54px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    p {
+      font-family: "Urbanist", sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      color: #fff;
+      opacity: 0.8;
+      margin-bottom: 40px;
+      max-width: 80%;
+    }
+    .btn__watch-detail {
+      background-color: #b40101;
+      transition: 0.2s;
+      width: fit-content;
+      a {
+        padding: 20px 41px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      &:hover {
+        background-color: #0d43b6;
+        transition: 0.2s;
+      }
+    }
+  }
+  .image {
+    > img {
+    }
+  }
+}

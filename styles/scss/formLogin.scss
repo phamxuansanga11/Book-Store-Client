@@ -1,0 +1,318 @@
+.login__form {
+  max-height: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f1f4f9),
+    to(#dff1ff)
+  );
+  background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+
+.login__form .color {
+  position: absolute;
+  -webkit-filter: blur(150px);
+  filter: blur(150px);
+  pointer-events: none;
+}
+
+.login__form .color:nth-child(1) {
+  top: -350px;
+  width: 600px;
+  height: 865px;
+  background: #ff359b;
+}
+
+.login__form .color:nth-child(2) {
+  bottom: -150px;
+  left: -100px;
+  width: 500px;
+  height: 500px;
+  background: #fffd87;
+}
+
+.login__form .color:nth-child(3) {
+  bottom: 50px;
+  right: 100px;
+  width: 445px;
+  height: 300px;
+  background: #00d2ff;
+}
+
+.login__form .box__form {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.login__form .box__form .square {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  -webkit-animation: animate 10s linear infinite;
+  animation: animate 10s linear infinite;
+  -webkit-animation-delay: calc(-1s * var(--i));
+  animation-delay: calc(-1s * var(--i));
+}
+
+.login__form .box__form .square:nth-child(1) {
+  top: -50px;
+  right: -60px;
+  width: 100px;
+  height: 100px;
+}
+
+.login__form .box__form .square:nth-child(2) {
+  top: 150px;
+  left: -100px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
+
+.login__form .box__form .square:nth-child(3) {
+  bottom: 50px;
+  right: -60px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+
+.login__form .box__form .square:nth-child(4) {
+  bottom: -80px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+}
+
+.login__form .box__form .square:nth-child(5) {
+  top: -80px;
+  left: 140px;
+  width: 60px;
+  height: 60px;
+}
+
+.login__form .box__form .--container__form-login {
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login__form .box__form .--container__form-login .form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.login__form .box__form .--container__form-login .form h2 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.login__form .box__form .--container__form-login .form h2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -14px;
+  width: 80px;
+  height: 4px;
+  background: #fff;
+}
+
+.login__form .box__form .--container__form-login .form form .inputBox {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login__form .box__form .--container__form-login .form form .inputBox input {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  width: 86.5%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.login__form
+  .box__form
+  .--container__form-login
+  .form
+  form
+  .inputBox
+  input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.login__form
+  .box__form
+  .--container__form-login
+  .form
+  form
+  .inputBox
+  input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.login__form
+  .box__form
+  .--container__form-login
+  .form
+  form
+  .inputBox
+  input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.login__form
+  .box__form
+  .--container__form-login
+  .form
+  form
+  .inputBox
+  input::placeholder {
+  color: #fff;
+}
+
+.login__form
+  .box__form
+  .--container__form-login
+  .form
+  form
+  .inputBox
+  input:focus {
+  border: 1px solid #ff359b;
+}
+
+.form__login {
+  .btn__register {
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    &:hover {
+      color: #ff68b4;
+    }
+  }
+}
+
+.login__form
+  .box__form
+  .--container__form-login
+  .form
+  form
+  .inputBox
+  .btn__submit-input {
+  max-width: 100px;
+  background: #fff;
+  color: #666;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 600px;
+}
+
+.login__form
+  .box__form
+  .--container__form-login
+  .form
+  form
+  .inputBox
+  .btn__submit-input:hover {
+  background: #ff68b4;
+  color: #fff;
+}
+
+.login__form .box__form .--container__form-login .form form .forget {
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+}
+
+.login__form .box__form .--container__form-login .form form .forget:hover {
+  color: #ff68b4;
+}
+
+.login__form .box__form .--container__form-login .form form .forget:hover a {
+  color: #ff68b4;
+}
+
+.login__form .box__form .--container__form-login .form form .forget > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+@-webkit-keyframes animate {
+  0%,
+  100% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+  50% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+  50% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+}
